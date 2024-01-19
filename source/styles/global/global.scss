@@ -1,1 +1,12 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+
+body {
+  font-family: "Railway", "Arial", sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

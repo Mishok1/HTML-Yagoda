@@ -1,7 +1,27 @@
 /* GLOBAL */
-@import "./global/variables.scss";
-@import "./global/global.scss";
-@import "./global/fonts.scss";
+@use "./global/variables.scss";
+@use "./global/global.scss";
+@use "./global/fonts.scss";
+@use "./global/container.scss";
+@use "./global/list-reset.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@use "./blocks/header.scss";
+@use "./blocks/logo.scss";
+@use "./blocks/navigation.scss";
+@use "./blocks/button.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/main.scss";
+@use "./blocks/product-card.scss";
+@use "./blocks/news.scss";
+@use "./blocks/post.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/order.scss";
+@use "./blocks/field.scss";
+@use "./blocks/checkbox-list.scss";
+@use "./blocks/radio-list.scss";
+@use "./blocks/text-list.scss";
+
