@@ -1,1 +1,18 @@
 @use "../global/variables.scss";
+
+.catalog {
+  padding: 60px 0;
+}
+
+.catalog__container {
+  padding: 0 26px;
+}
+
+.catalog__title {
+  margin-bottom: 60px;
+}
+
+.catalog__list {
+  display: grid;
+  gap: 24px;
+}

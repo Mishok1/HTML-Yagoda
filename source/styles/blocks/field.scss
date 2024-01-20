@@ -1,1 +1,18 @@
 @use "../global/variables.scss";
+
+.field {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.field__title {
+  font-size: 20px;
+  line-height: 23px;
+  color: #0F805D;
+  margin-bottom: 32px;
+}
+
+.field__list {
+  margin-bottom: 32px;
+}

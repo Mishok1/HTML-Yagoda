@@ -1,5 +1,82 @@
 @use "../global/variables.scss";
 
 .hero {
-  background: gray url("../../images/index-background-desktop@1x.jpg") no-repeat center;
+  background: url("../../images/index-background@1x.jpg") no-repeat top;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/index-background@2x.jpg");
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: url("../../images/index-background-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/index-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-image: url("../../images/index-background-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/index-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.hero__container {
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 22px 0 214px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: flex-start;
+  }
+}
+
+.hero__title {
+  margin-bottom: 32px;
+}
+
+.hero__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-bottom: 58px;
+
+  @media (min-width:variables.$tablet-width) {
+    padding: 0;
+  }
+}
+
+.hero__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  &--leaf::before {
+    background: url("../../images/icons/stack.svg#hero-leaf");
+  }
+
+  &--ice::before {
+    background: url("../../images/icons/stack.svg#hero-ice");
+  }
+
+  &--delivery::before {
+    background: url("../../images/icons/stack.svg#hero-delivery");
+  }
+}
+
+.hero__link {
+  justify-self: flex-start;
+  // why not working?????????????
 }

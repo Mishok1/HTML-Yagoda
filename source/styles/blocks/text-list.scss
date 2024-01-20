@@ -1,1 +1,63 @@
 @use "../global/variables.scss";
+
+.text-list {
+  display: grid;
+  row-gap: 36px;
+}
+
+.text-list__label {
+  font-size: 14px;
+  line-height: 16px;
+  display: grid;
+  row-gap: 4px;
+}
+
+.text-list__text {
+  margin: 0;
+  display: flex;
+  gap: 2px;
+  margin-left: 12px;
+}
+
+.text-list__required {
+  color: #FF8282;
+}
+
+.text-list__input {
+  border: 1px solid #0F805D;
+  border-radius: 20px;
+  padding: 16px 12px;
+  width: 100%;
+
+  &::placeholder {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #8E9892B2;
+  }
+
+  &--medium-size {
+    min-height: 88px;
+  }
+
+  &:hover {
+    border: 1px solid #7BDB0A;
+  }
+
+  &:focus {
+    border: 1px solid #7BDB0A;
+  }
+
+  &:active {
+    border: 1px solid #7BDB0A;
+  }
+
+  &:disabled {
+    border: 1px solid #8E9892B2;
+  }
+
+  &--error {
+    border: 1px solid #FF8282;
+  }
+}

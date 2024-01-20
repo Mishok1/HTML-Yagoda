@@ -1,0 +1,16 @@
+@use "../global/variables.scss";
+
+.title {
+  margin: 0;
+  font-family: "Comfortaa", "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #0F805D;
+
+  @media (min-width:variables.$tablet-width) {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}

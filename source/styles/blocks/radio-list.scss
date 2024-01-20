@@ -1,1 +1,53 @@
 @use "../global/variables.scss";
+
+.radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.radio-list__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.radio-list__input {
+  margin: 0;
+  display: none;
+}
+
+.radio-list__control-mark {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 0;
+  left: 0;
+  border: 2px solid #0F805D;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  &::before {
+    content: "";
+    position: relative;
+    // background: url("../../images/icons/vector.svg") no-repeat center;
+    background-color: #0F805D;
+    display: none;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--disabled {
+    border: 2px solid #8E9892B2;
+  }
+}
+
+.radio-list__input:checked + .radio-list__control-mark::before {
+  display: block;
+}

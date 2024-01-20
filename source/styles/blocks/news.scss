@@ -1,1 +1,28 @@
 @use "../global/variables.scss";
+
+.news {
+  padding-bottom: 60px;
+}
+
+.news__container {
+  padding: 0 26px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 228px;
+    height: 32px;
+    background-image: url("../../images/icons/stack.svg#leafs");
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+}
+
+.news__title {
+  margin-bottom: 64px;
+}
+
+.news__list {
+  display: grid;
+  gap: 24px;
+}

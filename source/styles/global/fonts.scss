@@ -1,17 +1,25 @@
 /* здесь подключите шрифты*/
 @font-face {
-  font-family: "Railway";
+  font-family: "Comfortaa";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/raleway-regular.woff2") format("woff2");
+  src: url("../../fonts/comfortaa-regular.woff2") format("woff2"), url("../../fonts/comfortaa-regular.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Comfortaa";
+  font-family: "Railway";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/raleway-regular.woff2") format("woff2");
+  src: url("../../fonts/raleway-regular.woff2") format("woff2"), url("../../fonts/raleway-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AmaticSC-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/AmaticSC-Bold.woff2") format("woff2"), url("../../fonts/AmaticSC-Bold.woff2") format("woff");
   font-display: swap;
 }
 

@@ -1,7 +1,58 @@
 @use "../global/variables.scss";
 
-.header {
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 0 21px 0 26px;
   background-color: #F1F6FC;
   color: #000000;
   box-shadow: 0px 4px 4px 0px #580D6540;
+  position: relative;
+  min-height: 60px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 5px 4px 0 rgba(88, 13, 101, 0.4);
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 22px 26px;
+  }
+}
+
+.header__logo {
+  @media (min-width: variables.$tablet-width) {
+    flex-shrink: 0;
+    margin-right: 87px;
+  }
+}
+
+.header__button {
+  margin-left: auto;
+  background: none;
+  background-image: url("../../images/icons/stack.svg#burger");
+  border: none;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+
+  &--no-js {
+    display: none;
+  }
+
+  &--opened {
+    background-image: url("../../images/icons/stack.svg#burger-closed");
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
 }

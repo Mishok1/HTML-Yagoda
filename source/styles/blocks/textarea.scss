@@ -1,0 +1,14 @@
+@use "../global/variables.scss";
+
+.textarea {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  min-height: 88px;
+  color: #8E9892B2;
+
+  &--big-size {
+    min-height: 148px;
+  }
+}

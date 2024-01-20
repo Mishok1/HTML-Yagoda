@@ -1,1 +1,58 @@
 @use "../global/variables.scss";
+
+.order {
+  background: url("../../images/form-background@1x.jpg") no-repeat top;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/form-background@2x.jpg");
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: url("../../images/form-background-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/form-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-image: url("../../images/form-background-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/form-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.order__container {
+  padding: 0 26px 88px 26px;
+}
+
+.order__button {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 400;
+  border: 0;
+}
+
+.order__title {
+  margin-bottom: 32px;
+}
+
+.order__text {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.order__form {
+  &::before {
+    content: "";
+    display: block;
+    width: 228px;
+    height: 32px;
+    background-image: url("../../images/icons/stack.svg#leafs");
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}

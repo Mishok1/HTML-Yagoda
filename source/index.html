@@ -12,11 +12,14 @@
 <body class="page__body">
   <header class="header">
     <div class="header__container container">
-      <a class="header__logo logo" href="#">
-        <img class="logo__image" src="#" alt="Ягода.">
-      </a>
-      <nav class="navigation">
-        <button class="navigation__toggle button" type="button" aria-label="Открыть меню навигации."></button>
+      <svg class="header__logo logo" width="52" height="52">
+        <use class="logo__image" href="images/icons/stack.svg#logo"></use>
+        <use class="logo__text" href="images/icons/stack.svg#logo-text"></use>
+      </svg>
+      <button class="header__button header__button--no-js header__button--closed">
+        <span class="visually-hidden">Кнопка открытия меню</span>
+      </button>
+      <nav class="navigation navigation--closed">
         <ul class="navigation__list navigation-list list-reset">
           <li class="navigation-list__item">
             <a class="navigation-list__link" href="#">Каталог</a>
@@ -37,121 +40,137 @@
   <main class="main">
     <section class="main__hero hero">
       <div class="hero__container container">
-        <h1 class="hero__title">Ягоды с доставкой</h1>
+        <h1 class="hero__title title">Ягоды с доставкой</h1>
         <ul class="hero__list list-reset">
-          <li class="hero__item">Отборные ягоды</li>
-          <li class="hero__item">Натуральный вкус сохранён методом шоковой заморозки</li>
-          <li class="hero__item">Доставка по Санкт-Петербургу</li>
+          <li class="hero__item hero__item--leaf">Отборные ягоды</li>
+          <li class="hero__item hero__item--ice">Натуральный вкус сохранён методом шоковой заморозки</li>
+          <li class="hero__item hero__item--delivery">Доставка по Санкт-Петербургу</li>
         </ul>
-        <a class="hero__link" href="form.html">Заказать</a>
+        <a class="hero__link button" href="form.html">Заказать</a>
       </div>
     </section>
     <section class="main__catalog catalog">
       <div class="catalog__container container">
-        <h2 class="catalog__title">Каталог</h2>
+        <h2 class="catalog__title title">Каталог</h2>
         <ul class="catalog__list list-reset">
           <li class="catalog__item product-card">
             <h3 class="product-card__title">Малина</h3>
-            <picture>
-              <source type="image/webp" srcset="images/catalog/image-1@1x.webp 1x, images/catalog/image-1@2x.webp 2x" width="320" height="455">
-              <img class="product-card__image" src="images/catalog/image-1@1x.jpg" srcset="images/catalog/image-1@2x.jpg 2x" alt="Малина.">
+            <picture class="product-card__picture">
+              <source type="image/webp" srcset="images/catalog/image-1@1x.webp 1x, images/catalog/image-1@2x.webp 2x"
+                width="320" height="455">
+              <img class="product-card__image" src="images/catalog/image-1@1x.jpg"
+                srcset="images/catalog/image-1@2x.jpg 2x" alt="Малина.">
             </picture>
             <p class="product-card__text">
               <span>350 ₽</span>
               <span>за 1 кг</span>
             </p>
-            <a class="product-card__link" href="form.html">Заказать</a>
+            <a class="product-card__link button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <h3 class="product-card__title">Ежевика</h3>
-            <picture>
-              <source type="image/webp" srcset="images/catalog/image-2@1x.webp 1x, images/catalog/image-2@2x.webp 2x" width="320" height="455">
-              <img class="product-card__image" src="images/catalog/image-2@1x.jpg" srcset="images/catalog/image-2@2x.jpg 2x" alt="Малина.">
+            <picture class="product-card__picture">
+              <source type="image/webp" srcset="images/catalog/image-2@1x.webp 1x, images/catalog/image-2@2x.webp 2x"
+                width="320" height="455">
+              <img class="product-card__image" src="images/catalog/image-2@1x.jpg"
+                srcset="images/catalog/image-2@2x.jpg 2x" alt="Малина.">
             </picture>
             <p class="product-card__text">
               <span>550 ₽</span>
               <span>за 1 кг</span>
             </p>
-            <a class="product-card__link" href="form.html">Заказать</a>
+            <a class="product-card__link button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <h3 class="product-card__title">Брусника</h3>
-            <picture>
-              <source type="image/webp" srcset="images/catalog/image-3@1x.webp 1x, images/catalog/image-3@2x.webp 2x" width="320" height="455">
-              <img class="product-card__image" src="images/catalog/image-3@1x.jpg" srcset="images/catalog/image-3@2x.jpg 2x" alt="Малина.">
+            <picture class="product-card__picture">
+              <source type="image/webp" srcset="images/catalog/image-3@1x.webp 1x, images/catalog/image-3@2x.webp 2x"
+                width="320" height="455">
+              <img class="product-card__image" src="images/catalog/image-3@1x.jpg"
+                srcset="images/catalog/image-3@2x.jpg 2x" alt="Малина.">
             </picture>
             <p class="product-card__text">
               <span>390 ₽</span>
               <span>за 1 кг</span>
             </p>
-            <a class="product-card__link" href="form.html">Заказать</a>
+            <a class="product-card__link button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <h3 class="product-card__title">Клубника</h3>
-            <picture>
-              <source type="image/webp" srcset="images/catalog/image-4@1x.webp 1x, images/catalog/image-4@2x.webp 2x" width="320" height="455">
-              <img class="product-card__image" src="images/catalog/image-4@1x.jpg" srcset="images/catalog/image-4@2x.jpg 2x" alt="Малина.">
+            <picture class="product-card__picture">
+              <source type="image/webp" srcset="images/catalog/image-4@1x.webp 1x, images/catalog/image-4@2x.webp 2x"
+                width="320" height="455">
+              <img class="product-card__image" src="images/catalog/image-4@1x.jpg"
+                srcset="images/catalog/image-4@2x.jpg 2x" alt="Малина.">
             </picture>
             <p class="product-card__text">
               <span>450 ₽</span>
               <span>за 1 кг</span>
             </p>
-            <a class="product-card__link" href="form.html">Заказать</a>
+            <a class="product-card__link button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <h3 class="product-card__title">Вишня</h3>
-            <picture>
-              <source type="image/webp" srcset="images/catalog/image-5@1x.webp 1x, images/catalog/image-5@2x.webp 2x" width="320" height="455">
-              <img class="product-card__image" src="images/catalog/image-5@1x.jpg" srcset="images/catalog/image-5@2x.jpg 2x" alt="Малина.">
+            <picture class="product-card__picture">
+              <source type="image/webp" srcset="images/catalog/image-5@1x.webp 1x, images/catalog/image-5@2x.webp 2x"
+                width="320" height="455">
+              <img class="product-card__image" src="images/catalog/image-5@1x.jpg"
+                srcset="images/catalog/image-5@2x.jpg 2x" alt="Малина.">
             </picture>
             <p class="product-card__text">
               <span>375 ₽</span>
               <span>за 1 кг</span>
             </p>
-            <a class="product-card__link" href="form.html">Заказать</a>
+            <a class="product-card__link button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <h3 class="product-card__title">Крыжовник</h3>
-            <picture>
-              <source type="image/webp" srcset="images/catalog/image-6@1x.webp 1x, images/catalog/image-6@2x.webp 2x" width="320" height="455">
-              <img class="product-card__image" src="images/catalog/image-6@1x.jpg" srcset="images/catalog/image-6@2x.jpg 2x" alt="Малина.">
+            <picture class="product-card__picture">
+              <source type="image/webp" srcset="images/catalog/image-6@1x.webp 1x, images/catalog/image-6@2x.webp 2x"
+                width="320" height="455">
+              <img class="product-card__image" src="images/catalog/image-6@1x.jpg"
+                srcset="images/catalog/image-6@2x.jpg 2x" alt="Малина.">
             </picture>
             <p class="product-card__text">
               <span>300 ₽</span>
               <span>за 1 кг</span>
             </p>
-            <a class="product-card__link" href="form.html">Заказать</a>
+            <a class="product-card__link button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <h3 class="product-card__title">Голубика</h3>
-            <picture>
-              <source type="image/webp" srcset="images/catalog/image-7@1x.webp 1x, images/catalog/image-7@2x.webp 2x" width="320" height="455">
-              <img class="product-card__image" src="images/catalog/image-7@1x.jpg" srcset="images/catalog/image-7@2x.jpg 2x" alt="Малина.">
+            <picture class="product-card__picture">
+              <source type="image/webp" srcset="images/catalog/image-7@1x.webp 1x, images/catalog/image-7@2x.webp 2x"
+                width="320" height="455">
+              <img class="product-card__image" src="images/catalog/image-7@1x.jpg"
+                srcset="images/catalog/image-7@2x.jpg 2x" alt="Малина.">
             </picture>
             <p class="product-card__text">
               <span>510 ₽</span>
               <span>за 1 кг</span>
             </p>
-            <a class="product-card__link" href="form.html">Заказать</a>
+            <a class="product-card__link button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <h3 class="product-card__title">Клюква</h3>
-            <picture>
-              <source type="image/webp" srcset="images/catalog/image-8@1x.webp 1x, images/catalog/image-8@2x.webp 2x" width="320" height="455">
-              <img class="product-card__image" src="images/catalog/image-8@1x.jpg" srcset="images/catalog/image-8@2x.jpg 2x" alt="Малина.">
+            <picture class="product-card__picture">
+              <source type="image/webp" srcset="images/catalog/image-8@1x.webp 1x, images/catalog/image-8@2x.webp 2x"
+                width="320" height="455">
+              <img class="product-card__image" src="images/catalog/image-8@1x.jpg"
+                srcset="images/catalog/image-8@2x.jpg 2x" alt="Малина.">
             </picture>
             <p class="product-card__text">
               <span>320 ₽</span>
               <span>за 1 кг</span>
             </p>
-            <a class="product-card__link" href="form.html">Заказать</a>
+            <a class="product-card__link button" href="form.html">Заказать</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="main__news news">
       <div class="news__container container">
-        <h2 class="news__title">Что новенького?</h2>
+        <h2 class="news__title title">Что новенького?</h2>
         <ul class="news__list list-reset">
           <li class="news__item post">
             <h3 class="post__title">Новый урожай клубники</h3>
@@ -178,36 +197,57 @@
     </section>
     <section class="main__contacts contacts">
       <div class="contacts__container container">
-        <h2 class="contacts__title">Где забрать ягоды?</h2>
+        <h2 class="contacts__title title">Где забрать ягоды?</h2>
         <p class="contacts__text">Забери ягоды с нашего склада по адресу:</p>
         <address class="contacts__address">
-          <span>Набережная Обводного канала, 101</span>
-          <a href="tel:+79105244118">+ 7 910 524 41 18</a>
-          <a href="mailto:info@yagoda.ru">info@yagoda.ru</a>
+          <span class="contacts__item contacts__item--leaf">Набережная Обводного канала, 101</span>
+          <a class="contacts__item contacts__item--phone contacts__link" href="tel:+79105244118">+ 7 910 524 41 18</a>
+          <a class="contacts__item contacts__item--mail contacts__link" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
         </address>
       </div>
       <!-- <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab71ced4502bd77b0ac1e6b2b7f45ddf52004daa574e1aad3170f93700df46a0d&amp;source=constructor"
         width="100%" height="372" frameborder="0"></iframe> -->
+      <img class="contacts__map" src="images/map@1x.jpg" alt="map.">
     </section>
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo logo" href="#">
-        <img class="logo__image" src="#" alt="Ягода.">
-      </a>
+      <svg class="footer__image logo" width="52" height="52">
+        <use class="logo__image" href="images/icons/stack.svg#logo"></use>
+        <use class="logo__text" href="images/icons/stack.svg#logo-text"></use>
+      </svg>
       <ul class="footer__list social list-reset">
         <li class="social__item social__item--telegram">
-          <img src="" alt="">
+          <a class="social__link" href="https://web.telegram.org/">
+            <svg class="social__image" width="32" height="32">
+              <use href="images/icons/stack.svg#telegram"></use>
+            </svg>
+            <span class="visually-hidden">Телеграм</span>
+          </a>
         </li>
         <li class="social__item social__item--vk">
-          <img src="" alt="">
+          <a class="social__link" href="https://vk.com/">
+            <svg class="social__image" width="32" height="32">
+              <use href="images/icons/stack.svg#vk"></use>
+            </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social__item social__item--youtube">
-          <img src="" alt="">
+          <a class="social__link" href="https://www.youtube.com/">
+            <svg class="social__image" width="32" height="32">
+              <use href="images/icons/stack.svg#youtube"></use>
+            </svg>
+            <span class="visually-hidden">Youtube</span>
+          </a>
         </li>
       </ul>
-      <img src="" alt="html academy logo">
+      <a class="footer__link" href="https://up.htmlacademy.ru/profession/frontender-extended/3/adaptive/29">
+        <svg class="footer__second-logo" width="110" height="24">
+          <use href="images/icons/stack.svg#html-academy-logo"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 </body>

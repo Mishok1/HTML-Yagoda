@@ -1,1 +1,55 @@
 @use "../global/variables.scss";
+
+.checkbox-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.order__field:nth-of-type(2) .checkbox-list {
+  grid-template-columns: 1fr;
+}
+
+.checkbox-list__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox-list__input {
+  margin: 0;
+  display: none;
+}
+
+.checkbox-list__control-mark {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 0;
+  left: 0;
+  border: 2px solid #0F805D;
+  border-radius: 5px;
+  flex-shrink: 0;
+
+  &::before {
+    content: "";
+    position: relative;
+    background: url("../../images/icons/vector.svg") no-repeat center;
+    display: none;
+    width: 14px;
+    height: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--disabled {
+    border: 2px solid #8E9892B2;
+  }
+}
+
+.checkbox-list__input:checked+.checkbox-list__control-mark::before {
+  display: block;
+}

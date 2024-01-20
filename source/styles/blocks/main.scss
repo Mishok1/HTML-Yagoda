@@ -1,1 +1,13 @@
 @use "../global/variables.scss";
+
+.main__hero {
+  padding: 60px 0 190px;
+
+  @media (min-width:variables.$tablet-width) {
+    padding: 142px 0 420px;
+  }
+}
+
+.main__order {
+  padding-top: 184px;
+}

@@ -12,11 +12,16 @@
 <body class="page__body">
   <header class="header">
     <div class="header__container container">
-      <a class="header__logo logo" href="#">
-        <img class="logo__image" src="#" alt="Ягода.">
+      <a class="header__link" href="index.html">
+        <svg class="header__logo logo" width="52" height="52">
+          <use class="logo__image" href="images/icons/stack.svg#logo"></use>
+          <use class="logo__text" href="images/icons/stack.svg#logo-text"></use>
+        </svg>
       </a>
-      <nav class="navigation">
-        <button class="navigation__toggle button" type="button" aria-label="Открыть меню навигации."></button>
+      <button class="header__button header__button--no-js">
+        <span class="visually-hidden">Кнопка открытия меню</span>
+      </button>
+      <nav class="navigation navigation--closed">
         <ul class="navigation__list navigation-list list-reset">
           <li class="navigation-list__item">
             <a class="navigation-list__link" href="#">Каталог</a>
@@ -37,13 +42,13 @@
   <main class="main">
     <section class="main__order order">
       <div class="order__container container">
-        <h2 class="order__title">Закажи ягоды</h2>
+        <h2 class="order__title title">Закажи ягоды</h2>
         <p class="order__text">Мы соберем для вас ягоды
           и доставим их в удобном
           для вас виде - свежими или замороженными</p>
         <form class="order__form" action="echo.htmlacademy.ru" method="post">
           <fieldset class="order__field field">
-            <legend class="field__title">Дополнительно</legend>
+            <legend class="field__title">Выберите ягоды</legend>
             <ul class="field__list checkbox-list list-reset">
               <li class="checkbox-list__item">
                 <label class="checkbox-list__label">
@@ -104,14 +109,14 @@
               <li class="checkbox-list__item">
                 <label class="checkbox-list__label">
                   <input class="checkbox-list__input" name="berry" value="cloudberry" type="checkbox">
-                  <span class="checkbox-list__control-mark"></span>
+                  <span class="checkbox-list__control-mark checkbox-list__control-mark--disabled"></span>
                   <span class="checkbox-list__text">морошка</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__label">
                   <input class="checkbox-list__input" name="berry" value="blueberry" type="checkbox">
-                  <span class="checkbox-list__control-mark"></span>
+                  <span class="checkbox-list__control-mark checkbox-list__control-mark--disabled"></span>
                   <span class="checkbox-list__text">черника</span>
                 </label>
               </li>
@@ -198,13 +203,14 @@
                     Адрес
                     <span class="text-list__required">*</span>
                   </p>
-                  <input class="text-list__input" name="address" type="text" placeholder="Адрес в Санкт-Петербурге">
+                  <textarea class="text-list__input textarea" name="address">Адрес в Санкт-Петербурге</textarea>
                 </label>
               </li>
               <li class="text-list__item">
                 <label class="text-list__label">
                   <p class="text-list__text">Пожелания к заказу</p>
-                  <textarea class="text-list__input" name="requests-for-ordering">Чем мы можем вам помочь?</textarea>
+                  <textarea class="text-list__input textarea textarea--big-size"
+                    name="requests-for-ordering">Чем мы можем вам помочь?</textarea>
                 </label>
               </li>
             </ul>
@@ -215,12 +221,12 @@
     </section>
     <section class="main__contacts contacts">
       <div class="contacts__container container">
-        <h2 class="contacts__title">Где забрать ягоды?</h2>
+        <h2 class="contacts__title title">Где забрать ягоды?</h2>
         <p class="contacts__text">Забери ягоды с нашего склада по адресу:</p>
         <address class="contacts__address">
-          <span>Набережная Обводного канала, 101</span>
-          <a href="tel:+79105244118">+ 7 910 524 41 18</a>
-          <a href="mailto:info@yagoda.ru">info@yagoda.ru</a>
+          <span class="contacts__item contacts__item--leaf">Набережная Обводного канала, 101</span>
+          <a class="contacts__item contacts__item--phone" href="tel:+79105244118">+ 7 910 524 41 18</a>
+          <a class="contacts__item contacts__item--mail" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
         </address>
       </div>
       <!-- <iframe
@@ -230,21 +236,41 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="header__logo logo" href="#">
-        <img class="logo__image" src="#" alt="Ягода.">
-      </a>
-      <ul class="social__list list-reset">
+      <svg class="footer__image logo" width="52" height="52">
+        <use class="logo__image" href="images/icons/stack.svg#logo"></use>
+        <use class="logo__text" href="images/icons/stack.svg#logo-text"></use>
+      </svg>
+      <ul class="footer__list social list-reset">
         <li class="social__item social__item--telegram">
-          <img src="" alt="">
+          <a class="social__link" href="https://web.telegram.org/">
+            <svg class="social__image" width="32" height="32">
+              <use href="images/icons/stack.svg#telegram"></use>
+            </svg>
+            <span class="visually-hidden">Телеграм</span>
+          </a>
         </li>
         <li class="social__item social__item--vk">
-          <img src="" alt="">
+          <a class="social__link" href="https://vk.com/">
+            <svg class="social__image" width="32" height="32">
+              <use href="images/icons/stack.svg#vk"></use>
+            </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social__item social__item--youtube">
-          <img src="" alt="">
+          <a class="social__link" href="https://www.youtube.com/">
+            <svg class="social__image" width="32" height="32">
+              <use href="images/icons/stack.svg#youtube"></use>
+            </svg>
+            <span class="visually-hidden">Youtube</span>
+          </a>
         </li>
       </ul>
-      <img src="" alt="html academy logo">
+      <a class="footer__link" href="https://up.htmlacademy.ru/profession/frontender-extended/3/adaptive/29">
+        <svg class="footer__second-logo" width="110" height="24">
+          <use href="images/icons/stack.svg#html-academy-logo"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 </body>

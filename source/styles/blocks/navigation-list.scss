@@ -1,0 +1,17 @@
+@use "../global/variables.scss";
+
+.navigation-list__link {
+  color: #000000;
+
+  &:hover {
+    color: #7BDB0A;
+  }
+
+  &:focus {
+    color: #7BDB0A;
+  }
+
+  &:active {
+    color: #0F805D;
+  }
+}

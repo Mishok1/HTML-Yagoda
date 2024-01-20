@@ -1,1 +1,6 @@
 @use "../global/variables.scss";
+
+.social__image {
+  grid-column: 2/3;
+  justify-self: flex-end;
+}
