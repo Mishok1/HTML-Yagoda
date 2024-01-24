@@ -3,11 +3,30 @@
 .checkbox-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  column-gap: 20px;
+  row-gap: 32px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 48px;
+  }
 }
 
 .order__field:nth-of-type(2) .checkbox-list {
   grid-template-columns: 1fr;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+  }
 }
 
 .checkbox-list__label {
@@ -29,7 +48,7 @@
   display: block;
   top: 0;
   left: 0;
-  border: 2px solid #0F805D;
+  border: 2px solid #0f805d;
   border-radius: 5px;
   flex-shrink: 0;
 
@@ -46,10 +65,10 @@
   }
 
   &--disabled {
-    border: 2px solid #8E9892B2;
+    border: 2px solid rgba(142, 152, 146, 0.698);
   }
 }
 
-.checkbox-list__input:checked+.checkbox-list__control-mark::before {
+.checkbox-list__input:checked + .checkbox-list__control-mark::before {
   display: block;
 }

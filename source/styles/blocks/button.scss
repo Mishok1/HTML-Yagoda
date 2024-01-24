@@ -1,28 +1,35 @@
 @use "../global/variables.scss";
 
 .button {
-  color: #FBFCFE;
-  background-color: #6A107A;
+  color: #fbfcfe;
+  background-color: #6a107a;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.05em;
   padding: 16px;
   width: 264px;
-  box-shadow: 0px 4px 4px 0px #580D6540;
+  box-shadow: 0px 4px 4px 0px #580d6540;
   border-radius: 40px;
   display: block;
   text-align: center;
   margin: 0 auto;
 
   &:hover {
-    background-color: #B22EC8;
+    background-color: #b22ec8;
   }
 
   &:focus {
-    background-color: #B22EC8;
+    background-color: #b22ec8;
   }
 
   &:active {
-    background-color: #6A107A99;
+    background-color: rgba(106, 16, 122, 0.6);
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    width: 336px;
+    min-height: 68px;
   }
 }

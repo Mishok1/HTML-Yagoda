@@ -2,21 +2,25 @@
 
 .logo {
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     width: 133px;
     height: 60px;
   }
 }
 
 .logo__image {
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: none;
   }
 }
 
 .logo__text {
 
-  @media (max-width:variables.$tablet-width) {
+  @media (max-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
     display: block;
   }
 }

@@ -6,7 +6,7 @@
   padding: 0 21px 0 26px;
   background-color: #F1F6FC;
   color: #000000;
-  box-shadow: 0px 4px 4px 0px #580D6540;
+  box-shadow: 0px 4px 4px 0px rgba(88, 13, 101, 0.251);
   position: relative;
   min-height: 60px;
 
@@ -22,6 +22,10 @@
 
   @media (min-width: variables.$tablet-width) {
     padding: 22px 26px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 26px 192px 24px 156px;
   }
 }
 

@@ -9,10 +9,36 @@
 .field__title {
   font-size: 20px;
   line-height: 23px;
-  color: #0F805D;
+  color: #0f805d;
   margin-bottom: 32px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.field:nth-of-type(4) .field__title {
+  text-align: center;
+
+  @media (min-width: variables.$desktop-width) {
+    text-align: left;
+  }
 }
 
 .field__list {
   margin-bottom: 32px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 624px;
+  }
 }

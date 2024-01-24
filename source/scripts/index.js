@@ -16,3 +16,9 @@ button.addEventListener('click', () => {
     button.classList.remove('header__button--opened');
   }
 });
+
+// Map
+
+const map = document.querySelector('.contacts__image');
+
+map.classList.remove('contacts__image--no-js');

@@ -1,8 +1,9 @@
 @use "../global/variables.scss";
 
-.hero {
+.hero__container {
   background: url("../../images/index-background@1x.jpg") no-repeat top;
   background-size: 100%;
+  padding: 60px 0 190px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/index-background@2x.jpg");
@@ -10,6 +11,10 @@
 
   @media (min-width: variables.$tablet-width) {
     background-image: url("../../images/index-background-tablet@1x.jpg");
+    padding: 142px 22px 420px 214px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: flex-start;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/index-background-tablet@2x.jpg");
@@ -18,6 +23,7 @@
 
   @media (min-width: variables.$desktop-width) {
     background-image: url("../../images/index-background-desktop@1x.jpg");
+    padding: 172px 350px 252px 540px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/index-background-desktop@2x.jpg");
@@ -25,29 +31,37 @@
   }
 }
 
-.hero__container {
-  @media (min-width: variables.$tablet-width) {
-    padding: 0 22px 0 214px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: flex-start;
-  }
-}
-
 .hero__title {
   margin-bottom: 32px;
+
+  @media (min-width:variables.$tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .hero__list {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  row-gap: 18px;
   padding-left: 55px;
   padding-right: 55px;
-  margin-bottom: 58px;
+  margin-bottom: 64px;
 
   @media (min-width:variables.$tablet-width) {
     padding: 0;
+    row-gap: 19px;
+    margin-bottom: 48px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    margin-bottom: 52px;
+    margin-left: 22px;
   }
 }
 

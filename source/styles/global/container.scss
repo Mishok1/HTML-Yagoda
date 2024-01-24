@@ -8,7 +8,7 @@
     width: variables.$tablet-width;
   }
 
-  // @media (min-width: variables.$desktop-width) {
-  //   width: variables.$desktop-width;
-  // }
+  @media (min-width: variables.$desktop-width) {
+    width: variables.$desktop-width;
+  }
 }

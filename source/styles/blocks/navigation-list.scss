@@ -3,15 +3,19 @@
 .navigation-list__link {
   color: #000000;
 
+  &--current {
+    color: #0f805d;
+  }
+
   &:hover {
-    color: #7BDB0A;
+    color: #7bdb0a;
   }
 
   &:focus {
-    color: #7BDB0A;
+    color: #7bdb0a;
   }
 
   &:active {
-    color: #0F805D;
+    color: #0f805d;
   }
 }
