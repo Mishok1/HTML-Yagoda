@@ -3,7 +3,7 @@
 .navigation {
   display: none;
   position: absolute;
-  background-color: #F1F6FC;
+  background-color: #f1f6fc;
   top: 60px;
   left: 0;
   padding: 32px 40px;
@@ -33,7 +33,7 @@
   }
 }
 
-.header__button--no-js+.navigation {
+.header__button--no-js + .navigation {
   display: block;
 }
 

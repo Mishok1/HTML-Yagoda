@@ -2,7 +2,7 @@
 
 .post {
   padding: 34px 20px 24px;
-  border: 2px solid #0F805D;
+  border: 2px solid #0f805d;
   border-radius: 40px;
   font-size: 14px;
   line-height: 16px;
@@ -17,7 +17,7 @@
     justify-self: center;
   }
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 16px;
     line-height: 20px;
     min-height: 494px;
@@ -35,7 +35,7 @@
   padding-left: 25px;
   padding-right: 25px;
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 28px;
     line-height: 33px;
   }

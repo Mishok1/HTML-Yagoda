@@ -34,11 +34,11 @@
 .hero__title {
   margin-bottom: 32px;
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     margin-bottom: 48px;
   }
 
-  @media (min-width:variables.$desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-bottom: 52px;
   }
 }
@@ -51,7 +51,7 @@
   padding-right: 55px;
   margin-bottom: 64px;
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding: 0;
     row-gap: 19px;
     margin-bottom: 48px;
@@ -59,7 +59,7 @@
     line-height: 22px;
   }
 
-  @media (min-width:variables.$desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-bottom: 52px;
     margin-left: 22px;
   }
@@ -92,5 +92,4 @@
 
 .hero__link {
   justify-self: flex-start;
-  // why not working?????????????
 }

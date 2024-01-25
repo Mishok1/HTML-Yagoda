@@ -17,8 +17,9 @@
           <use class="logo__image" href="images/icons/stack.svg#logo"></use>
           <use class="logo__text" href="images/icons/stack.svg#logo-text"></use>
         </svg>
+        <span class="visually-hidden">Логотип Ягода</span>
       </a>
-      <button class="header__button header__button--no-js">
+      <button class="header__button header__button--no-js" type="button">
         <span class="visually-hidden">Кнопка открытия меню</span>
       </button>
       <nav class="navigation navigation--closed">
@@ -40,6 +41,7 @@
     </div>
   </header>
   <main class="main">
+    <h1 class="visually-hidden">Форма заказа</h1>
     <section class="main__order order">
       <div class="order__container container">
         <h2 class="order__title title">Закажи ягоды</h2>
@@ -172,47 +174,45 @@
             <ul class="field__list text-list list-reset">
               <li class="text-list__item">
                 <label class="text-list__label">
-                  <p class="text-list__text">
+                  <span class="text-list__text">
                     Имя
                     <span class="text-list__required">*</span>
-                  </p>
+                  </span>
                   <input class="text-list__input" name="name" type="text" placeholder="Как к вам обращаться?">
                 </label>
               </li>
               <li class="text-list__item">
                 <label class="text-list__label">
-                  <p class="text-list__text">
+                  <span class="text-list__text">
                     Телефон
                     <span class="text-list__required">*</span>
-                  </p>
+                  </span>
                   <input class="text-list__input" name="phone" type="tel" placeholder="+7 ххх ххх хх хх">
                 </label>
               </li>
               <li class="text-list__item">
                 <label class="text-list__label">
-                  <p class="text-list__text">
+                  <span class="text-list__text">
                     Email
                     <span class="text-list__required">*</span>
-                  </p>
+                  </span>
                   <input class="text-list__input" name="email" type="email" placeholder="Ваш email">
                 </label>
               </li>
               <li class="text-list__item">
-                <label class="text-list__label">
-                  <p class="text-list__text">
+                <label class="text-list__label" for="address">
+                  <span class="text-list__text">
                     Адрес
                     <span class="text-list__required">*</span>
-                  </p>
-                  <textarea class="text-list__input textarea" name="address"
-                    rows="1">Адрес в Санкт-Петербурге</textarea>
+                  </span>
                 </label>
+                <textarea class="text-list__input textarea" id="address" name="address" rows="1">Адрес в Санкт-Петербурге</textarea>
               </li>
               <li class="text-list__item">
-                <label class="text-list__label">
-                  <p class="text-list__text">Пожелания к заказу</p>
-                  <textarea class="text-list__input textarea textarea--big-size"
-                    name="requests-for-ordering">Чем мы можем вам помочь?</textarea>
+                <label class="text-list__label" for="additional">
+                  <span class="text-list__text">Пожелания к заказу</span>
                 </label>
+                <textarea class="text-list__input textarea textarea--big-size" id="additional" name="requests-for-ordering">Чем мы можем вам помочь?</textarea>
               </li>
             </ul>
           </fieldset>
@@ -271,6 +271,7 @@
         <svg class="footer__second-logo" width="110" height="24">
           <use href="images/icons/stack.svg#html-academy-logo"></use>
         </svg>
+        <span class="visually-hidden">Логотип HTML Academy</span>
       </a>
     </div>
   </footer>

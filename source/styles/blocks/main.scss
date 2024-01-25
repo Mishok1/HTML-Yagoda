@@ -3,22 +3,7 @@
 .main__catalog {
   padding: 60px 0;
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding: 100px 0;
   }
 }
-
-// .main__hero {
-//   padding: 60px 0 190px;
-
-//   @media (min-width:variables.$tablet-width) {
-//     padding: 142px 0 420px;
-//   }
-// }
-
-// .main__contacts {
-//   @media (min-width:variables.$desktop-width) {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
