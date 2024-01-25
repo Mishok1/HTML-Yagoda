@@ -55,7 +55,7 @@
   &::before {
     content: "";
     position: relative;
-    background: url("../../images/icons/vector.svg") no-repeat center;
+    background: url("../../images/icons/stack.svg#vector") no-repeat center;
     display: none;
     width: 14px;
     height: 11px;
@@ -71,4 +71,8 @@
 
 .checkbox-list__input:checked + .checkbox-list__control-mark::before {
   display: block;
+}
+
+.checkbox-list__text {
+  flex-shrink: 0;
 }
